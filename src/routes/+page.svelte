@@ -6,4 +6,5 @@ Agregan su componente (En este caso button)
 Y le agregan las clases de DaisyUI (Checar documentacion)
 Automaticamente le agrega css, similar a bootstrap
 -->
+<h2>Hola</h2>
 <button class="btn btn-primary">Button</button>
