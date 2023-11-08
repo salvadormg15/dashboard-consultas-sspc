@@ -7,4 +7,5 @@ Y le agregan las clases de DaisyUI (Checar documentacion)
 Automaticamente le agrega css, similar a bootstrap
 -->
 <h2>Hola</h2>
+<h2>Hola nuevamente</h2>
 <button class="btn btn-primary">Button</button>
