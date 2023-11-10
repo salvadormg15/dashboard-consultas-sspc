@@ -12,6 +12,9 @@ const config = {
 			}
 		}
 	},
+	daisyui: {
+		themes: ["light"]
+	},
 
 	plugins: [require("daisyui")]
 };
