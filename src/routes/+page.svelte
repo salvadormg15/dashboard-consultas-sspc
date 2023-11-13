@@ -1,9 +1,10 @@
 <script>
 	import '../app.postcss';
+	import AccountCircle from 'svelte-material-icons/AccountCircle.svelte';
 </script>
 
 <div class="login-content mx-auto my-10 p-6 flex flex-col items-center space-y-4">
-	<i class="fa-solid fa-user text-white text-5xl" />
+	<AccountCircle width="100px" height="100px" />
 	<div class="form-control w-full max-w-xs">
 		<label class="label">
 			<span class="label-text text-white">Correo Electronico</span>
