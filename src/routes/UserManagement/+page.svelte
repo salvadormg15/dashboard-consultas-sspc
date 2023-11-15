@@ -9,6 +9,14 @@
     }
 </script>
 
+<style>
+    ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  </style>
+  
 <ul>
     <li style="padding: 20px;">
         <div class="form-control w-full max-w-xs">
