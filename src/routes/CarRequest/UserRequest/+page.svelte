@@ -6,6 +6,7 @@
     function regresoColor(){
         this.style.background = "#F2F2F2";
         this.style.color = "black";
+        
     }
 </script>
 
