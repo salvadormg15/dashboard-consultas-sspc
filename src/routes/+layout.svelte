@@ -12,8 +12,8 @@
     </div>
     <div class="navbar-center">
         <ul class="menu menu-horizontal px-1 text-xl">
-            <li><a class="hover:text-white" href="CarRequest">Gestión de usuarios</a></li>
-            <li><a class="hover:text-white" href="UserManagement">Solicitudes</a></li>
+            <li><a class="hover:text-white" href="CarRequest">Solicitudes</a></li>
+            <li><a class="hover:text-white" href="UserManagement">Gestión de usuarios</a></li>
         </ul>
     </div>
     <div class="navbar-end">
