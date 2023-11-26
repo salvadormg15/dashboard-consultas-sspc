@@ -13,7 +13,7 @@
                     <p>Zona: Centro</p>
                     <p>Estado: Pendiente</p>
                     <br>
-                    <a href="."><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
+                    <a href="CarRequest/UserRequest"><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
                     <br>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <p>Zona: Sur</p>
                     <p>Estado: Pendiente</p>
                     <br>
-                    <a href="."><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
+                    <a href="CarRequest/UserRequest"><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
                     <br>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <p>Zona: Centro</p>
                     <p>Estado: Pendiente</p>
                     <br>
-                    <a href="."><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
+                    <a href="CarRequest/UserRequest"><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
                     <br>
                 </div>
             </div>
@@ -58,7 +58,10 @@
                     <p>Zona: Este</p>
                     <p>Estado: Completada</p>
                     <br>
-                    <a href="."><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
+                    <a href="CarRequest/UserRequest"><button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button></a>
                     <br>
                 </div>
             </div>
+        </li>
+    </ul>
+</div>
