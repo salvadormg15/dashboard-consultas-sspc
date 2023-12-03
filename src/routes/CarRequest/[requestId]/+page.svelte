@@ -22,12 +22,12 @@
         carRequest.analyst = 'numerodenomina';
         await carRequestService.updateCarRequest(carRequest);
         // //TODO: Show completed message
-        // await carRequestService.fulfillRequest(carRequest.requestId, carResponse)
-        //     .then(r => {
-        //         console.log("Solicitud completada");
-        //         goto('/CarRequest');
-        //     })
-        //     .catch((e) => console.log(e))
+        await carRequestService.fulfillRequest(carRequest.requestId, carResponse)
+            .then(r => {
+                console.log("Solicitud completada");
+                goto('/CarRequest');
+            })
+            .catch((e) => console.log(e))
     }
 </script>
 <div class="flex flex-col items-center w-full">
