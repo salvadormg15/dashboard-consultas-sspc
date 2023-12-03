@@ -3,6 +3,10 @@
 	import DeleteCircle from 'svelte-material-icons/DeleteCircle.svelte';
 	import PencilBox from 'svelte-material-icons/PencilBox.svelte';
     import AccountCircle from 'svelte-material-icons/AccountCircle.svelte';
+
+    /** @type {import('./$types').PageData} */
+    export let data;
+
     let showComponent = false;
     let showComponent2 = false;
     let showComponent3 = false;
