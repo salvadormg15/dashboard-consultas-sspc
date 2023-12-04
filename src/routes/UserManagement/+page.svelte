@@ -4,7 +4,6 @@
 	import PencilBox from 'svelte-material-icons/PencilBox.svelte';
     import AccountCircle from 'svelte-material-icons/AccountCircle.svelte';
     import { OfficerService } from '$lib';
-    import {error} from "@sveltejs/kit";
     import { invalidateAll } from '$app/navigation'
 
     let officerService = new OfficerService();

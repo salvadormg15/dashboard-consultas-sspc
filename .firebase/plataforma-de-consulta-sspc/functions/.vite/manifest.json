@@ -1,0 +1,135 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_AccountCircle.js": {
+    "file": "chunks/AccountCircle.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_OfficerService.js": {
+    "file": "chunks/OfficerService.js",
+    "imports": [
+      "_axios.js"
+    ]
+  },
+  "_axios.js": {
+    "file": "chunks/axios.js"
+  },
+  "_index.js": {
+    "file": "chunks/index.js"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "app.css": {
+    "file": "_app/immutable/assets/app.91fb374e.css",
+    "src": "app.css"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_index.js",
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/routes/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/app.91fb374e.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page.2713eec0.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.2713eec0.css",
+      "_app/immutable/assets/app.91fb374e.css"
+    ],
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_AccountCircle.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/CarRequest/+page.svelte": {
+    "file": "entries/pages/CarRequest/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_axios.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/CarRequest/+page.svelte"
+  },
+  "src/routes/CarRequest/[requestId]/+page.js": {
+    "file": "entries/pages/CarRequest/_requestId_/_page.js",
+    "imports": [
+      "_index.js",
+      "_axios.js",
+      "_OfficerService.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/CarRequest/[requestId]/+page.js"
+  },
+  "src/routes/CarRequest/[requestId]/+page.svelte": {
+    "file": "entries/pages/CarRequest/_requestId_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_axios.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/CarRequest/[requestId]/+page.svelte"
+  },
+  "src/routes/UserManagement/+page.js": {
+    "file": "entries/pages/UserManagement/_page.js",
+    "imports": [
+      "_axios.js",
+      "_OfficerService.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/UserManagement/+page.js"
+  },
+  "src/routes/UserManagement/+page.svelte": {
+    "file": "entries/pages/UserManagement/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_AccountCircle.js",
+      "_axios.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/UserManagement/+page.svelte"
+  }
+}
