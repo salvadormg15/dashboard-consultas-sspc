@@ -17,4 +17,6 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PLATAFORMA_DE_CONSULTA_SSPC }}'
           channelId: live
-          projectId: plataforma-de-consulta-sspc
+          projectId: plataforma-de-consulta-  sspc
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
