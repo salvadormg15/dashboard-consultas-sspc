@@ -10,8 +10,7 @@ export async function load({params}) {
 
     var carRequest = await carRequestService.getCarRequest(requestId);
 
-    //TODO: Move status to a constant
-    if(carRequest !== null && carRequest.status === 'ABIERTO'){
+    if(carRequest !== null){
         var officerService = new OfficerService();
 
         var officer = await officerService.getOfficerById(carRequest.officer);
