@@ -44,7 +44,7 @@
             unsubscribeAllRequests && unsubscribeAllRequests();
         }
 
-        console.log(queryLimit)
+
         const allRequestsQuery = query(collection(firestore, 'CarRequest'), limit(queryLimit));
 
         unsubscribeAllRequests = onSnapshot(allRequestsQuery, (querySnapshot) => {
@@ -110,7 +110,7 @@
                     </div>
                     <br>
                     <a class="card-actions justify-center" href="CarRequest/{carRequest.requestId}">
-                        <button class="btn btn-neutral" style="background-color: #191970;">Atender solicitud</button>
+                        <button class="btn btn-neutral" style="background-color: #191970;">Ver detalles</button>
                     </a>
                 </div>
             </div>

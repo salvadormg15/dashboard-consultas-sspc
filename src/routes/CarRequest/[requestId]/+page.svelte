@@ -18,6 +18,9 @@
     }
 
     async function fulfillRequest() {
+        //TODO: MOVE TO A CONSTANT
+        if(carRequest.status === 'COMPLETADA') return;
+
         //TODO: Set analyst
         carRequest.analyst = 'numerodenomina';
         await carRequestService.updateCarRequest(carRequest);
@@ -31,6 +34,12 @@
     }
 </script>
 <div class="flex flex-col items-center w-full">
+    {#if carRequest.status === 'ABIERTO'}
+        <div role="alert" class="alert alert-info mt-1 w-3/4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>Inicio de sesión en desarrollo. Todas las solicitudes son respondidas a nombre de Miguel Mercado</span>
+        </div>
+    {/if}
     <div class="flex flex-row w-full justify-center mx-auto">
         <div class="flex flex-col w-1/4">
             <div class="collapse-title text-xl font-medium text-center">
@@ -65,6 +74,33 @@
                     value="{officerAssignment.crp}"
                 />
             </div>
+
+<!--            TODO: MOVE TO A CONSTANT-->
+            {#if carRequest.status === 'COMPLETADA' }
+                <div class="collapse-title text-xl font-medium text-center mt-5">
+                    Datos del analista
+                </div>
+                <div class="form-control w-full max-w-xs px-5">
+                    <div class="label">
+                        <span class="label-text">Nombre</span>
+                    </div>
+                    <input
+                            type="text"
+                            class="input input-bordered w-full max-w-xs"
+                            disabled
+                            value="{officer.name}"
+                    />
+                    <div class="label">
+                        <span class="label-text">Agrupación</span>
+                    </div>
+                    <input
+                            type="text"
+                            class="input input-bordered w-full max-w-xs"
+                            disabled
+                            value="{officerAssignment.group}"
+                    />
+                </div>
+            {/if}
         </div>
 
         <div class="flex flex-col w-1/4">
@@ -232,7 +268,12 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-row items-end pt-10">
-        <button class="btn btn-success" on:click="{fulfillRequest}">Enviar Información</button>
-    </div>
+
+<!--    TODO: Move to a constant-->
+    {#if carRequest.status === 'ABIERTO'}
+        <div class="flex flex-row items-end pt-10">
+            <button class="btn btn-success" on:click="{fulfillRequest}">Enviar Información</button>
+        </div>
+    {/if}
+
 </div>
