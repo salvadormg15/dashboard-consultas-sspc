@@ -18,7 +18,7 @@
 		<input
 			type="text"
 			placeholder="Escribe tu correo"
-			class="input input-bordered w-full max-w-xs"
+			class="input input-bordered w-full max-w-xs text-black"
 		/>
 	</div>
 
@@ -29,7 +29,7 @@
 		<input
 			type="password"
 			placeholder="Escribe tu contraseña"
-			class="input input-bordered w-full max-w-xs"
+			class="input input-bordered w-full max-w-xs text-black"
 		/>
 	</div>
 
