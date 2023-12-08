@@ -119,8 +119,7 @@
     <div class="flex justify-end items-center m-16">
         <span>Límite: </span>
         <select class="select select-bordered select-sm max-w-xs m-3" bind:value={allRequestsLimit}>
-            <option selected value="5">5</option>
-            <option value="30">30</option>
+            <option selected value="30">30</option>
             <option value="50">50</option>
             <option value="100">100</option>
         </select>
